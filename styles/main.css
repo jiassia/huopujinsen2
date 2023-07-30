@@ -1,0 +1,48 @@
+/* 按钮样式 */
+.button, .button:link, .button:visited {
+  font-size: 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  -webkit-animation: bounce .6s infinite alternate;
+  -moz-animation: bounce .6s infinite alternate;
+  animation: bounce .6s infinite alternate;
+}
+
+/* 按钮动画 */
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.1); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.1); }
+}
+@keyframes bounce {
+  to { transform: scale(1.1); }
+}
+
+/* 鼠标悬停和按下效果 */
+.button:hover, .button:active {
+  background-color: red;
+}
+
+/* 文本输入框和文本区域的样式 */
+input[type=text], input[type=email], textarea {
+  width: 100%; /* 宽度占满父元素 */
+  padding: 12px; /* 添加一些内边距 */
+  border: 1px solid #ccc; /* 灰色边框 */
+  border-radius: 4px; /* 圆角边框 */
+  box-sizing: border-box; /* 确保内边距和宽度不会增加元素的尺寸 */
+  margin-top: 6px; /* 顶部外边距 */
+  margin-bottom: 16px; /* 底部外边距 */
+  resize: vertical; /* 允许用户垂直调整文本区域的大小（不允许水平调整） */
+}
+
+/* 隐藏特定元素 */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+header { visibility: hidden; }
